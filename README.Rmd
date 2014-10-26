@@ -1,0 +1,24 @@
+# Coursera Getting And Cleaning Data Course Assignment
+
+Tidies a dataset that comes from a study about Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+More information about the study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+More information about the Coursera course: https://www.coursera.org/course/getdata
+
+## Instructions
+1. Download data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2. Extract the contents of the zip file
+3. Set the working directory of your RStudio or similar IDE to directory which includes the unzipped directory called "UCI HAR Dataset"
+4. Run the run_analysis.R
+5. See the results in the console and in a file called means.txt in your working directory
+
+## The Analysis
+
+Brief introduction what the run_analysis.R does:
+1. Loads required libraries
+2. Merges training and test data sets
+3. Combines subject, activity and measurement files to one data.frame for both training and test data
+4. Combines test data and training data rows to one data.frame
+5. Adds descriptive activity labels from activity_labels.txt
+6. Adds labels "subject", "activity" and the features from features.txt
+7. Discards other than mean and standard deviation measurements
+8. Creates a second data set with the average of each variable for each activity and each subject
